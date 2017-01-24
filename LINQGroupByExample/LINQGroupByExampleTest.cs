@@ -86,7 +86,7 @@ namespace LINQGroupByExample
 
             // Group web page accesses by Url, count accesses by Url
             var webPageAccessGroups = from row in this.WebPageAccesses
-                                          // we can group by multiple fields, if needed
+                                      // we can group by multiple fields, if needed
                                       group row by new { row.Url } into urlAccessGroup
                                       select new                        // group projection
                                       {
